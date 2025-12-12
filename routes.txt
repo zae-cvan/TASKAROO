@@ -1,0 +1,69 @@
+
+  GET|HEAD        / .............................................................................................. 
+  GET|HEAD        activity-log ........................................ activity.log › ActivityLogController@index
+  GET|HEAD        admin ........................................ admin.dashboard › Admin\DashboardController@index
+  GET|HEAD        admin/recycle-bin ........................... admin.tasks.recycle › Admin\TaskController@recycle
+  GET|HEAD        admin/tasks ..................................... admin.tasks.index › Admin\TaskController@index
+  GET|HEAD        admin/tasks/assign ................... admin.tasks.assign › Admin\TaskAssignmentController@index
+  POST            admin/tasks/assign .............. admin.tasks.assignPost › Admin\TaskAssignmentController@assign
+  POST            admin/tasks/bulk-action ............... admin.tasks.bulkAction › Admin\TaskController@bulkAction
+  DELETE          admin/tasks/force-delete/{id} ....... admin.tasks.forceDelete › Admin\TaskController@forceDelete
+  PATCH           admin/tasks/restore/{id} .................... admin.tasks.restore › Admin\TaskController@restore
+  POST            admin/tasks/store-assign admin.tasks.storeAndAssign › Admin\TaskAssignmentController@storeAndAs…
+  GET|HEAD        admin/tasks/{task} ................................ admin.tasks.show › Admin\TaskController@show
+  PUT             admin/tasks/{task} ............................ admin.tasks.update › Admin\TaskController@update
+  DELETE          admin/tasks/{task} .......................... admin.tasks.destroy › Admin\TaskController@destroy
+  GET|HEAD        admin/tasks/{task}/edit ........................... admin.tasks.edit › Admin\TaskController@edit
+  GET|HEAD        admin/users ..................................... admin.users.index › Admin\UserController@index
+  POST            admin/users/{user}/toggle ............... admin.users.toggle › Admin\UserController@toggleActive
+  GET|HEAD        dashboard ................................................ dashboard › DashboardController@index
+  GET|HEAD        dev/login-as-admin ............................................................................. 
+  POST            email/verification-notification verification.send › Auth\EmailVerificationNotificationControlle…
+  GET|HEAD        email/verify ............................................................... verification.notice
+  GET|HEAD        email/verify/{id}/{hash} ............. verification.verify › Auth\VerifyEmailController@__invoke
+  GET|HEAD        forgot-password ............... forgot.password › Auth\OtpPasswordResetController@showForgotForm
+  POST            forgot-password ................. forgot.password.send › Auth\OtpPasswordResetController@sendOtp
+  GET|HEAD        login ....................................... login › Auth\AuthenticatedSessionController@create
+  POST            login ................................................ Auth\AuthenticatedSessionController@store
+  POST            logout .................................... logout › Auth\AuthenticatedSessionController@destroy
+  GET|HEAD        notifications ..................................... notifications › NotificationController@index
+  GET|HEAD        notifications/unread ............................................. NotificationController@unread
+  GET|HEAD        otp-verify ....................... otp.verify.form › Auth\OtpPasswordResetController@showOtpForm
+  POST            otp-verify .............................. otp.verify › Auth\OtpPasswordResetController@verifyOtp
+  GET|HEAD        profile ....................................................... profile › ProfileController@edit
+  POST            profile .............................................. profile.update › ProfileController@update
+  DELETE          profile ............................................ profile.destroy › ProfileController@destroy
+  POST            profile/password .................... profile.password.update › ProfileController@updatePassword
+  POST            profile/send-password-otp ................. password.sendOtp › ProfileController@sendPasswordOtp
+  POST            profile/update-password-otp . password.changeWithOtpDb › ProfileController@updatePasswordWithOtp
+  GET|HEAD        recycle-bin ............................................. tasks.recycle › TaskController@recycle
+  GET|HEAD        register ....................................... register › Auth\RegisteredUserController@create
+  POST            register ................................................... Auth\RegisteredUserController@store
+  GET|HEAD        reset-password ............. password.reset.form › Auth\OtpPasswordResetController@showResetForm
+  POST            reset-password .................. password.reset › Auth\OtpPasswordResetController@resetPassword
+  GET|HEAD        speech ................................................... speech.index › SpeechController@index
+  DELETE          speech/delete/{id} .................................... speech.delete › SpeechController@destroy
+  POST            speech/save ................................................ speech.save › SpeechController@save
+  POST            speech/translate ................................. speech.translate › SpeechController@translate
+  GET|HEAD        storage/{path} ................................................................... storage.local
+  GET|HEAD        tasks ....................................................... tasks.index › TaskController@index
+  POST            tasks ....................................................... tasks.store › TaskController@store
+  POST            tasks/bulk-action ................................. tasks.bulkAction › TaskController@bulkAction
+  GET|HEAD        tasks/create .............................................. tasks.create › TaskController@create
+  DELETE          tasks/force-delete/{id} ......................... tasks.forceDelete › TaskController@forceDelete
+  POST            tasks/group-action .............................. tasks.groupAction › TaskController@groupAction
+  PATCH           tasks/restore/{id} ...................................... tasks.restore › TaskController@restore
+  GET|HEAD        tasks/{task} .................................................. tasks.show › TaskController@show
+  PUT|PATCH       tasks/{task} .............................................. tasks.update › TaskController@update
+  DELETE          tasks/{task} ............................................ tasks.destroy › TaskController@destroy
+  PATCH           tasks/{task}/archive .................................... tasks.archive › TaskController@archive
+  PATCH           tasks/{task}/complete ................................. tasks.complete › TaskController@complete
+  GET|HEAD        tasks/{task}/edit ............................................. tasks.edit › TaskController@edit
+  PATCH           tasks/{task}/pin ................................................ tasks.pin › TaskController@pin
+  PATCH           tasks/{task}/unarchive .............................. tasks.unarchive › TaskController@unarchive
+  PATCH           tasks/{task}/uncomplete ........................... tasks.uncomplete › TaskController@uncomplete
+  PATCH           tasks/{task}/unpin .......................................... tasks.unpin › TaskController@unpin
+  GET|HEAD        up ............................................................................................. 
+
+                                                                                               Showing [65] routes
+
